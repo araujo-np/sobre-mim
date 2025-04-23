@@ -1,112 +1,206 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>*
+<html lang="pt-br" data-theme="dark">
+
+<head>
+    <!-- Meta informações sobre a página -->
     <meta charset="utf-8">
-    <meta name="viewport" content=" "width=device-width, initial-scale="1.0">
-    <title hidden>Sobre mim</title>
-    <!--CSS Reset-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre mim</title>
+
+    <!-- CSS Reset -->
     <link rel="stylesheet" href="reset.css">
-<!--CSS externo(arquivo style)-->
+
+    <!-- CSS externo (arquivo style) -->
     <link rel="stylesheet" href="style.css">
-    
+
+    <!-- CSS interno (tag style) -->
     <style>
+        /* body {
+                background-color: #00ff00;
+            } */
     </style>
-    <!-- META INFORMAÇÕES SOBRE A PAGINA -->
 </head>
-<!-- HTML NÃO TEM PESCOÇO --> 
+
 <body>
-    <h1>Sobre mim</h1>
-    <!--code injected by live server-->
 
-    <p>Gosto de jogar futvolêi e sou comunicativa</p>
-
-    <img src="https://avatars.githubusercontent.com/u/200938400?s=400&u=45ca0f0cb4a35a1637ca6ee4c80d0e51fae1338e&v=4" 
-         alt="Foto de perfil do github" 
-         width="200" height="200" 
-         title="foto de perfil do github">
-
-    <p>
-        <a href="https://github.com/araujo-np"></a>
-        
-    </p>
-
-    <ol>
-       
-    </ol>
-
-       
-            <a href="https://github.com/araujo-np">Acesse o meu github</a>
-        </li>
-    </ul>
-        
     <header>
         <nav>
-        <ul>
-            <li><a href="#">Sobre mim</a></li>
-            <li><a href="#">Formação academica</a></li>
-            <li><a href="#">hard skills</a></li>
-            <li><a href="#">soft skills</a></li>
-            <li><a href="#">Meus projetos</a></li>
-            <li><a href="#">Meus artigos</a></li>
-            <li><a href="#">Ultima seção</a></li>
-        </ul>
-    </nav>
+            <ul>
+                <li><a href="#sobreMim">Sobre mim</a></li>
+                <li><a href="#formacaoAcademica">Formação</a></li>
+                <li><a href="#hardSkills">Hard skills</a></li>
+                <li><a href="#softSkills">Soft skills</a></li>
+                <li><a href="#meusProjetos">Projetos</a></li>
+                <li><a href="#meusArtigos">Artigos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li> <span id="botao-tema">💡</span> </li>
+            </ul>
+        </nav>
     </header>
 
-<section>
-    <h2>Formação academica</h2>
-    <li>Ensino fundamental completo pelo SESI</li>
-    <li>Se formando no ensino medio do SESI</li>
-    <li>Cursnado desenvolvimento de sistemas no senai</li>
-</section>
+    <section id="sobreMim">
+        <h1>Sobre mim</h1>
+        <p>Oi! Meu nome é Nathaly Araújo, sou estudante do ensino médio e nasci no dia
+            07/03/2008 — ♓, sou piciana! 
+            Amo passar o tempo livre em família e amigos, gosto de viajar e conhecer lugares novos.
+             Sou uma pessoa animada, curiosa e sempre aberta a novas experiências.</p>
 
-<section>
-    <h2 class="titulo-secao">Hard skills</h2>
+        <img src="https://avatars.githubusercontent.com/u/200938400?s=400&u=45ca0f0cb4a35a1637ca6ee4c80d0e51fae1338e&v=4" alt="Foto de uma mulher negra de cabelos liso. " width="200"
+        alt="Foto de perfil do github" 
+        width="200" height="200" 
+        title="foto de perfil do github" class="foto-perfil">
 
-            <div class="cards-em-linha">
+        <!-- section>(h2>{Nova seção})+p*2>lorem20 -->
+
+        <!-- header>nav.navbar>ul.lista>li*10>a>{link$} -->
+
+        <ul>
+            <li>
+                <a href="https://github.com/araujo-np" title="Clique para acessar meu portfólio no GitHub"
+                    target="_blank">Acesse o meu GitHub</a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/h_ar4ujo/" target="_blank">Acesse o meu Instagram</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="formacaoAcademica">
+
+        <h2 class="titulo-secao">Formação acadêmica</h2>
+
+        <div class="cards-em-coluna"> <!-- Contêiner dos cards -->
 
             <ul class="card">
-                <li class="icone-card">❤️</li>
-                <li class="titulo-card">ingles </li>
-                <li class="descricao-card">Interfaces visuais e interativas web</li>
+                <li class="titulo-card">Escola</li>
+                <li class="instituicao-card"> Ensino quase completo pela instituição SESI</li>
             </ul>
+
+            <ul class="card">
+                <li class="titulo-card">Técnico em Desenvolvimento de Sistemas</li>
+                <li class="instituicao-card">SENAI "Conde José Vicente de Azevedo"</li>
+                <li class="ano-card">2026 (previsto)</li>
+            </ul>
+
         </div>
-    <li>inglês nivel básico</li>
-    <li>design nivel básico</li>
-    <li>programação em JS nivel basico</li>
-    <li><a href="https://github.com/araujo-np">GitHub nivel basico</li></a>
-    <li>digitação média</li>
-    <li>edição de videos nivel simples</li>
-    <li>utilização do powershell nivel básico</li>
-    <li>conhecimento nível básico em lógica de programação</li>
-</section>
 
-<section>
-    <h2>soft skills</h2>
-    <li>boa autoconfiança</li>
-    <li>tabalho em grupo</li>
-    <li>empatia</li>
-    <li>pensamento critico</li>
-    <li>tomada de decisão</li>
-    <li>comunicação</li>
-    <li>imperativa</li>
-</section>
+        <!-- ul.card>li.titulo-card+li.instituicao-card+li.ano-card -->
 
-<section>
-    <h2>Meus projetos</h2>
-    <li><a href="https://github.com/araujo-np">Jogo de alunissagem</a> </li>
-</section>
+    </section>
 
-<section>
-    <h2>Meus artigos</h2>
-</section>
+    <section id="hardSkills">
+        <h2 class="titulo-secao">Hard skills</h2>
 
-<section>
-    <address>informações uteis</address>
-    <address><a href="https://github.com/araujo-np">Meu github</a> </address>
-    <address>telefone: 11958092831</address>
-    <address>Email-nathalyaraujodepaulo@gmail.com.br</address>
-    
-</section>
+        <div class="cards-em-linha"> <!-- Contêiner dos cards (em linha) -->
+
+            <ul class="card">
+                <li class="icone-card">📚</li>
+                <li class="titulo-card">Inglês</li>
+                <li class="descricao-card">Nível básico</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🪄</li>
+                <li class="titulo-card">Desing</li>
+                <li class="descricao-card">Nível medio</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">📱</li>
+                <li class="titulo-card">Programação JS</li>
+                <li class="descricao-card">Nível básico</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🐈‍⬛</li>
+                <li class="titulo-card">Git Hub </li>
+                <li class="descricao-card">Nível médio </li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🎢</li>
+                <li class="titulo-card">Edição de video</li>
+                <li class="descricao-card">Nível médio/experiente</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🧾</li>
+                <li class="titulo-card">lógica de programação</li>
+                <li class="descricao-card">Nível básico</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section id="softSkills">
+
+        <h2 class="titulo-secao">Soft skills</h2>
+
+        <div class="cards-em-linha">
+
+            <ul class="card">
+                <li class="icone-card">🤝</li>
+                <li class="titulo-card">Trabalho em equipe</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🫡</li>
+                <li class="titulo-card">Autoconfiança</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🧩</li>
+                <li class="titulo-card">Responsabilidade com trabalho</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🦾</li>
+                <li class="titulo-card">Proatividade</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">🗣️</li>
+                <li class="titulo-card">Comunicativa</li>
+            </ul>
+
+            <ul class="card">
+                <li class="icone-card">⏱️</li>
+                <li class="titulo-card">Autogestão</li>
+            </ul>
+
+        </div>
+
+    </section>
+
+    <section id="meusProjetos">
+
+        <h2>Meus projetos</h2>
+
+    <li><a href="https://github.com/araujo-np">jogo de alunissagem</a> </li>
+
+
+    <footer id="rodape">
+        <ul>
+            <a href="Email-nathalyaraujodepaulo@gmail.com.br">💌</a>
+            <a href="tel:+">11958092831</a>
+            <a href="https:11958092831">Fale comigo no WhatsApp</a>
+        </ul>
+        <address>São Paulo, SP - Brasil</address>
+    </footer>
+    <script>
+        document.querySelector('#botao-tema').addEventListener('click', trocaTema);
+        function trocaTema() {
+            const root = document.documentElement;
+            if (root.getAttribute('data-theme') === 'dark') {
+                root.removeAttribute('data-theme');
+
+            } else {
+                root.setAttribute('data-theme', 'dark');
+            }
+        }
+    </script>
+
 </body>
+
 </html>
